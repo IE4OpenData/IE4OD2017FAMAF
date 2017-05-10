@@ -3569,6 +3569,27 @@ Need a corpus of disambiguated references or at least text related to each
  entity
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/ejmeij/entity-linking-and-retrieval-tutorial
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Frame
 
@@ -3760,29 +3781,34 @@ curl http://model.dbpedia-spotlight.org/en/annotate
 Result:
 \end_layout
 
-\begin_layout Quotation
+\begin_layout Standard
 
 \size small
-{ "Resources": [ 
-\end_layout
-
-\begin_layout Quotation
-
+{ "Resources": [ { "@URI": "
+\size scriptsize
+http://dbpedia.org/resource/
 \size small
-{ "@URI": "http://dbpedia.org/resource/Barack_Obama", "@support": "14695",
- "@types": "DBpedia:Agent, Schema:Person, Http://xmlns.com/foaf/0.1/Person,
- DBpedia:Person, DBpedia:OfficeHolder", "@surfaceForm": "President Obama",
- "@offset": "0", "@similarityScore": "0.993", "@percentageOfSecondRank":
+Barack_Obama", "@support": "14695", "@types": "DBpedia:Agent, Schema:Person,
+ 
+\size scriptsize
+Http://xmlns.com/foaf/0.1/
+\size small
+Person, DBpedia:Person, DBpedia:OfficeHolder", "@surfaceForm": "President
+ Obama", "@offset": "0", "@similarityScore": "0.993", "@percentageOfSecondRank":
  "0.006" }, 
 \end_layout
 
-\begin_layout Quotation
+\begin_layout Standard
 
 \size small
-{ "@URI": "http://dbpedia.org/resource/United_States_Congress", "@support":
- "19906", "@types": "DBpedia:Agent, Schema:Organization, DBpedia:Organisation,
- DBpedia:Legislature", "@surfaceForm": "Congress", "@offset": "36", "@similarity
-Score": "0.969", "@percentageOfSecondRank": "0.029" }, ...
+{ "@URI": "
+\size scriptsize
+http://dbpedia.org/resource/
+\size small
+United_States_Congress", "@support": "19906", "@types": "DBpedia:Agent,
+ Schema:Organization, DBpedia:Organisation, DBpedia:Legislature", "@surfaceForm"
+: "Congress", "@offset": "36", "@similarityScore": "0.969", "@percentageOfSecondR
+ank": "0.029" }, ...
 \end_layout
 
 \end_deeper
@@ -3862,6 +3888,66 @@ https://github.com/dbpedia-spotlight/dbpedia-spotlight/tree/master/uima
 
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+DBpedia Spotlight (2013)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Phrase Spotting:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+First step: identify candidates for possible annotations
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Language independent: FSA with all possible Wikipedia titles and rewordings
+\end_layout
+
+\begin_layout Itemize
+Language dependent: Capitalized Tokens + OpenNLP models
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Second step: remove overlaps using preferences among generation methods
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Disambiguation:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Generative probabilistic model based on contexts
+\end_layout
+
+\begin_layout Itemize
+Counts for the model are kept on indices using Kyro 
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Subsection
 End-to-End Example
