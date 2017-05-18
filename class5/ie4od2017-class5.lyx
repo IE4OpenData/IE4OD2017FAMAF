@@ -1179,7 +1179,7 @@ Generate CASes on 36
 \end_layout
 
 \begin_layout Itemize
-Annotate on 32 / evaluate on 32
+Annotate on 36 / evaluate on 36
 \end_layout
 
 \end_deeper
@@ -2074,6 +2074,56 @@ by Yanjun Qi et al.
 1.3M Chinese NER
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+LSTM-CRF
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+paper-298
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "“Deep Learning for Character-based Information Extraction”"
+target "http://www.cs.cmu.edu/~qyj/zhSenna/2014_ecir2014_full.pdf"
+
+\end_inset
+
+by Yanjun Qi et al.
+ (ECIR 2014)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+1.3M Chinese NER
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_body
 \end_document
