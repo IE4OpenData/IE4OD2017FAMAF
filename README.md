@@ -7,4 +7,4 @@ Material for the FAMAF-UNC 2017 graduate course "Hybrid IE Systems for Open Data
 * [Class 3: Rule Based IE](class3/ie4od2017-class3.pdf)
 * [Class 4: ML Based IE](class4/ie4od2017-class4.pdf)
 * [Class 5: Hybrid IE](class5/ie4od2017-class5.pdf)
-* [Class 6: Research Topics](class6/ie4od2017-class5.pdf)
+* [Class 6: Research Topics](class6/ie4od2017-class6.pdf)
